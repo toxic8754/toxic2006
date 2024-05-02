@@ -1,0 +1,696 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #0c0708;
+    --bg:#0c0708;
+    --border:0.1rem inset rgb(255, 255, 255);
+}
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+body{
+    background-color: #0c0708;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #2c1414;
+    -radius: 5rem;
+}
+
+body {
+    backdrop-filter: blur(20px);
+}
+
+section {
+    padding: 2rem 7%;
+
+}
+
+.heading {
+    text-align: center;
+    color:var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+  
+
+}
+
+.heading span {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+
+}
+
+
+/* .......................header section....................... */
+
+.header {
+    backdrop-filter:blur(10px);
+    /* background-color: #2c1414; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    /* border-bottom: var(--border); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+   
+}
+
+.header .logo img {
+    height: 6rem;
+
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    
+
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff8f8;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    border: 1rem;
+    margin-left: 1REM;
+    border-color:var(--bg);
+    text-transform: none;
+    border:10PX;
+    
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+/* .........................header end...................... */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(tool-used-coffee-press.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #0c0708;
+}
+
+.home .content {
+    max-width: 60rem;
+
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #fff;
+
+
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* .......................home end.............. */
+
+.about .row {
+    display: flex;
+    align-items: center;
+     border: solid;
+     border-color: #fff;
+ box-sizing: -10px;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color:var(--main-color);
+}
+
+.about .row .content p {
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-size: 1.6rem;
+
+}
+
+/* ........................about end..................... */
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    justify-content:space-around ;
+    border: var(--border);
+
+}
+
+.menu .box-conter .box img {
+    height: 10rem;
+
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+
+}
+
+.menu .box-container .box .price {
+
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+
+
+}
+
+.menu .box-container .box:hover {
+    background: #fff;
+
+}
+
+.menu .box-container .box:hover>* {
+    color: var(--black);
+
+}
+
+/* ........................................menu end.............. */
+.products .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+
+}
+
+.products .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.products .box-container .box .icons a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    
+    border: var(--border);
+    margin: 0.3rem;
+    color: #fff;
+}
+
+.products .box-container .box .image {
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img {
+    height: 25rem;
+}
+
+.products .box-container .box .image h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.products .box-container .box .content .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price span {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+}
+
+/* ........................................products end.................... */
+
+.review.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 3fr));
+    gap: 1.5rem;
+
+}
+
+.review .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem 2rem;
+    
+    /* margin: 30px 400px 30px 100px; */
+}
+
+.review .box-container .box p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .nurik {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+/* ......................review end........................ */
+
+.contact .row {
+    display: flex;
+    background: var(--black);
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.contact .row form {
+    flex: 3 3 30rem;
+    padding: rem 2rem;
+    text-align: center;
+   
+   
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background: var(--bg);
+    border: var(--border);
+    border-radius: 10px;
+    margin-left:   200px;
+    margin-right: 200px;
+
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding:4rem;
+    font-size: 2rem;
+    color: #fff; 
+    background: none;
+}
+.sbtn{
+    
+
+
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+/* ......................contact end......................... */
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+
+.blogs .box-container .box {
+    text-align: center;
+    border: var(--border);
+
+}
+
+
+
+.blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+    align-items: center;
+
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    font-size: 2rem;
+    padding-top: 1rem;
+    align-items: center;
+
+
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.8;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.blogs .box-container .box .contenta a .btn {
+
+    align-items: center;
+}
+
+/* .................................blogs end.............. */
+footer {
+    background: var(--black);
+    text-align: center;
+     border-top:var(--border);
+
+}
+
+footer .share {
+    padding: 1rem 0;
+
+}
+
+footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    gap: 10px;
+    border: var(--border);
+    margin: 0.8rem;
+    border-radius: 50%;
+}
+
+footer .share a:hover {
+    background-color: var(--main-color);
+
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+footer .links a {
+    padding: 0.7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+footer .links a:hover {
+    background: var(--main-color);
+
+}
+
+footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+
+}
+
+footer .credit span {
+    color: var(--main-color);
+}
+
+/* ...............................................footer end......... */
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    section {
+        padding: 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+    .contact .row form .inputBox {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        background: var(--bg);
+        border: var(--border);
+        border-radius: 10px;
+        margin-left:   50px;
+        margin-right: 30px;
+    
+    }
+}
+.animated-section{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animated-section.animate{
+    opacity: 1;
+    transform: translateY(0);
+
+}
